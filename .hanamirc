@@ -1,0 +1,4 @@
+project=generic_dao_jruby
+architecture=container
+test=minitest
+template=erb
