@@ -1,4 +1,7 @@
 /db/*.sqlite
 /public/assets*
 /tmp
+/vendor
+
 .env.*
+.bundle

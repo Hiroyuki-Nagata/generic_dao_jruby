@@ -2,7 +2,7 @@
 
 JRuby testing for REST API and Hanami framework
 
-# Run
+## Run
 
 * Install JRuby at first, then...
 
@@ -12,7 +12,7 @@ JRuby testing for REST API and Hanami framework
 > jruby -S bundle exec hanami s
 ```
 
-* DB migration
+## DB migration
 
 * on Windows  
 
@@ -24,4 +24,18 @@ JRuby testing for REST API and Hanami framework
 
 ```
 > jruby -S bundle exec sequel jdbc:sqlite:db/generic_dao_jruby_development.sqlite -m ./db/migrations -E
+```
+
+## Compile as jar & Deploy it
+
+* Compile
+
+```
+> jruby -S bundle install --path vendor/bundle
+> jruby -S bundle exec warble war .
+```
+
+* Deploy
+
+```
 ```
