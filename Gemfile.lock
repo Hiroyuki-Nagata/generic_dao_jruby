@@ -160,7 +160,11 @@ DEPENDENCIES
   minitest
   puma
   rake
+  sequel
   warbler
+
+RUBY VERSION
+   ruby 2.3.3p0 (jruby 9.1.13.0)
 
 BUNDLED WITH
    1.15.4
