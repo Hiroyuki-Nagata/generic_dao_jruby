@@ -1,1 +1,1 @@
-web: bin/puma -p $PORT -e $RACK_ENV
+web: jruby -S bundle exec puma -p $PORT -e $RACK_ENV

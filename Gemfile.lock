@@ -94,6 +94,7 @@ GEM
       url_mount (~> 0.2.1)
     ice_nine (0.11.2)
     inflecto (0.0.2)
+    jdbc-postgres (9.4.1206)
     jdbc-sqlite3 (3.15.1)
     jruby-jars (9.1.13.0)
     jruby-rack (1.1.20)
@@ -156,6 +157,7 @@ DEPENDENCIES
   dotenv (~> 2.0)
   hanami (~> 1.0)
   hanami-model (~> 1.0)
+  jdbc-postgres
   jdbc-sqlite3
   minitest
   puma
