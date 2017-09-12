@@ -1,18 +1,18 @@
 source 'https://rubygems.org'
 
-ruby '2.3.3', engine: 'jruby', engine_version: '9.1.13.0'
+ruby '2.3.3', engine: 'jruby', engine_version: '>=9.1.0.0'
 
 gem 'rake'
 gem 'hanami',       '~> 1.0'
 gem 'hanami-model', '~> 1.0'
 gem 'warbler'
 gem 'sequel'
-gem 'jdbc-sqlite3'
 gem 'puma'
 gem 'jdbc-postgres', platform: :jruby
 
 group :test, :development do
   gem 'dotenv', '~> 2.0'
+  gem 'pry'
 end
 
 group :test do

@@ -12,19 +12,17 @@ JRuby testing for REST API and Hanami framework
 > jruby -S bundle exec hanami s
 ```
 
+## Dotenv
+
+* Please create dotenv files like, `.env.development`, `.env.test`, `.env.production`
+
+```
+DATABASE_URL="postgres://localhost/..."
+```
+
 ## DB migration
 
-* on Windows  
-
-```
-> jruby -S bundle exec sequel jdbc:sqlite:db\\generic_dao_jruby_development.sqlite -m .\db\migrations -E
-```
-
-* on Unix
-
-```
-> jruby -S bundle exec sequel jdbc:sqlite:db/generic_dao_jruby_development.sqlite -m ./db/migrations -E
-```
+*
 
 ## Compile as jar & Deploy it
 
@@ -35,7 +33,22 @@ JRuby testing for REST API and Hanami framework
 > jruby -S bundle exec warble war .
 ```
 
-* Deploy
+Heroku
+
+* Get your database URL
 
 ```
+$ heroku pg:info --app <your-app-id>
+=== DATABASE_URL
+```
+
+* Get your database credentials
+
+```
+$ heroku pg:credentials:url DATABASE --app <your-app-id>
+Connection information for default credential.
+Connection info string:
+   "dbname=..."
+Connection URL:
+   postgres://...:5432/...
 ```
