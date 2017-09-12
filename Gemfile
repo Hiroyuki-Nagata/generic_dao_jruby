@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.3.3', engine: 'jruby', engine_version: '>=9.1.0.0'
+ruby '>=2.3.0', engine: 'jruby', engine_version: '>=9.1.0.0'
 
 gem 'rake'
 gem 'hanami',       '~> 1.0'
