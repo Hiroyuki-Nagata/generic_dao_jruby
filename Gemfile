@@ -10,6 +10,10 @@ gem 'sequel'
 gem 'puma'
 gem 'jdbc-postgres', platform: :jruby
 
+platform :jruby do
+  gem 'pg', '0.18', platform: :jruby, git: 'git://github.com/headius/jruby-pg.git', branch: :master
+end
+
 group :test, :development do
   gem 'dotenv', '~> 2.0'
   gem 'pry'
