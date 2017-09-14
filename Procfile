@@ -1,1 +1,1 @@
-web: jruby -S bundle exec puma -p $PORT -e $RACK_ENV
+web: HANAMI_ENV=$RACK_ENV bundle exec hanami server -p $PORT
