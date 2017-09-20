@@ -1,10 +1,3 @@
-GIT
-  remote: git://github.com/headius/jruby-pg.git
-  revision: d14e9d018aecb82a577ef4173db8bc2216d6118d
-  branch: master
-  specs:
-    pg (0.18)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -103,8 +96,8 @@ GEM
       url_mount (~> 0.2.1)
     ice_nine (0.11.2)
     inflecto (0.0.2)
-    jdbc-postgres (9.4.1206)
     jruby-jars (9.1.13.0)
+    jruby-pg (0.1-java)
     jruby-rack (1.1.20)
     mail (2.6.6)
       mime-types (>= 1.16, < 4)
@@ -174,9 +167,8 @@ DEPENDENCIES
   dotenv (~> 2.0)
   hanami (~> 1.0)
   hanami-model (~> 1.0)
-  jdbc-postgres
+  jruby-pg (~> 0.1)
   minitest
-  pg (= 0.18)!
   pry
   puma
   rake
