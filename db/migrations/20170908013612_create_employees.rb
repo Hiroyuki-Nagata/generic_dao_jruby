@@ -1,5 +1,8 @@
 Hanami::Model.migration do
   change do
+    # drop if exists
+    drop_table? :employees
+    # create table
     create_table :employees do
       primary_key :emp_no, Integer, null: false
       column :birth_date, Date, null: false
