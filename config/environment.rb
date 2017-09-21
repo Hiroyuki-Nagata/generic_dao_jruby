@@ -1,7 +1,7 @@
 require 'bundler/setup'
 require 'hanami/setup'
 require 'hanami/model'
-require_relative '../lib/generic_dao_jruby'
+require_relative '../lib/hanami_jruby_rest'
 require_relative '../apps/api/application'
 require_relative '../apps/web/application'
 

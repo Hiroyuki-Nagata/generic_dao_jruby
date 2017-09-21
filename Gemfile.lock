@@ -10,6 +10,9 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    childprocess (0.7.1)
+      ffi (~> 1.0, >= 1.0.11)
+    choice (0.2.0)
     coderay (1.1.2)
     concurrent-ruby (1.0.5-java)
     dotenv (2.2.1)
@@ -96,7 +99,6 @@ GEM
       url_mount (~> 0.2.1)
     ice_nine (0.11.2)
     inflecto (0.0.2)
-    jruby-jars (9.1.13.0)
     jruby-pg (0.1-java)
     jruby-rack (1.1.20)
     mail (2.6.6)
@@ -107,6 +109,11 @@ GEM
     mime-types-data (3.2016.0521)
     mini_mime (0.1.4)
     minitest (5.10.3)
+    mizuno (0.6.11)
+      childprocess (>= 0.2.6)
+      choice (>= 0.1.0)
+      ffi (>= 1.0.0)
+      rack (>= 1.0.0)
     nokogiri (1.8.0-java)
     pry (0.10.4-java)
       coderay (~> 1.1.0)
@@ -114,7 +121,6 @@ GEM
       slop (~> 3.4)
       spoon (~> 0.0)
     public_suffix (3.0.0)
-    puma (3.10.0-java)
     rack (2.0.3)
     rack-test (0.7.0)
       rack (>= 1.0, < 3)
@@ -141,7 +147,6 @@ GEM
       dry-types (~> 0.10, >= 0.10.2)
       rom (~> 3.2, >= 3.2.2)
       sequel (~> 4.43)
-    rubyzip (1.2.1)
     sequel (4.49.0)
     slop (3.6.0)
     spoon (0.0.6)
@@ -151,11 +156,6 @@ GEM
     transproc (1.0.2)
     url_mount (0.2.1)
       rack
-    warbler (2.0.4)
-      jruby-jars (>= 9.0.0.0)
-      jruby-rack (>= 1.1.1, < 1.3)
-      rake (>= 10.1.0)
-      rubyzip (~> 1.0, < 1.4)
     xpath (2.1.0)
       nokogiri (~> 1.3)
 
@@ -168,12 +168,12 @@ DEPENDENCIES
   hanami (~> 1.0)
   hanami-model (~> 1.0)
   jruby-pg (~> 0.1)
+  jruby-rack
   minitest
+  mizuno
   pry
-  puma
   rake
   sequel
-  warbler
 
 RUBY VERSION
    ruby 2.3.3p0 (jruby 9.1.13.0)

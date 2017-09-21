@@ -33,7 +33,7 @@ DATABASE_URL="postgres://localhost/..."
 > jruby -S bundle exec warble war .
 ```
 
-Heroku
+Heroku Postgres for testing
 
 * Get your database URL
 
@@ -51,4 +51,12 @@ Connection info string:
    "dbname=..."
 Connection URL:
    postgres://...:5432/...
+```
+
+* Set "DATABASE_URL"
+    * Edit `config/environment.rb`
+
+```
+- adapter :sql, ENV['DATABASE_URL']
++ adapter :sql, 'postgres://user:pass@host:5432:schema?sslmode=require'
 ```
