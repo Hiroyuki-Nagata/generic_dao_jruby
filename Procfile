@@ -1,1 +1,1 @@
-web: jruby -S bundle exec puma -p $PORT -e $RACK_ENV
+web: jruby -S bundle exec rackup -E $RACK_ENV -p $PORT -s mizuno
