@@ -1,10 +1,7 @@
 Hanami::Model.migration do
   up do
     execute %{
-      --
-      -- SQLs from https://www.ntu.edu.sg/home/ehchua/programming/sql/SampleDatabases.html
-      --
-      INSERT INTO `departments` VALUES
+      INSERT INTO departments VALUES
       ('d001','Marketing'),
       ('d002','Finance'),
       ('d003','Human Resources'),
