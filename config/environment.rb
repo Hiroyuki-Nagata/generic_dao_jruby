@@ -16,9 +16,9 @@ Hanami.configure do
     # Available options:
     #
     #  * SQL adapter
-    #    adapter :sql, 'sqlite://db/generic_dao_jruby_development.sqlite3'
-    #    adapter :sql, 'postgresql://localhost/generic_dao_jruby_development'
-    #    adapter :sql, 'mysql://localhost/generic_dao_jruby_development'
+    #    adapter :sql, 'sqlite://db/hanami_jruby_rest_development.sqlite3'
+    #    adapter :sql, 'postgresql://localhost/hanami_jruby_rest_development'
+    #    adapter :sql, 'mysql://localhost/hanami_jruby_rest_development'
     #
     adapter :sql, ENV['DATABASE_URL']
 
@@ -30,7 +30,7 @@ Hanami.configure do
   end
 
   mailer do
-    root 'lib/generic_dao_jruby/mailers'
+    root 'lib/hanami_jruby_rest/mailers'
 
     # See http://hanamirb.org/guides/mailers/delivery
     delivery :test
